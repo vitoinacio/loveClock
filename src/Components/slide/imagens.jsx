@@ -35,6 +35,13 @@ const Imagens = [
   { id: 34, src: './img34.mp4', type: 'mp4' },
   { id: 35, src: './img35.mp4', type: 'mp4' },
   { id: 36, src: './img36.mp4', type: 'mp4' },
+  { id: 37, src: './img37.jpg', type: 'jpg' },
+  { id: 38, src: './img38.jpg', type: 'jpg' },
+  { id: 39, src: './img39.jpg', type: 'jpg' },
+  { id: 40, src: './img40.jpg', type: 'jpg' },
+  { id: 41, src: './img41.jpg', type: 'jpg' },
+  { id: 42, src: './img42.jpg', type: 'jpg' },
+  { id: 43, src: './img43.jpg', type: 'jpg' },
 ];
 
 export default Imagens;

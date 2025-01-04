@@ -5,6 +5,7 @@ import {
   format,
   differenceInSeconds,
   differenceInYears,
+  differenceInMonths,
   differenceInDays,
   differenceInHours,
   differenceInMinutes,
@@ -47,17 +48,19 @@ const ClockContainer = () => {
       setCurrentDate(now);
 
       const diffInYears = differenceInYears(targetDate, now);
-      const diffInDays = differenceInDays(targetDate, now) % 365;
+      const diffInMonths = differenceInMonths(targetDate, now) % 12;
+      const diffInDays = differenceInDays(targetDate, now) % 30;
       const diffInHours = differenceInHours(targetDate, now) % 24;
       const diffInMinutes = differenceInMinutes(targetDate, now) % 60;
       const diffInSeconds = differenceInSeconds(targetDate, now) % 60;
 
       setDifference([
-        {type:'Anos', time: -diffInYears},
-        {type:'Dias', time: -diffInDays},
-        {type:'Horas', time: -diffInHours},
-        {type:'Minutos', time: -diffInMinutes},
-        {type:'Segundos', time: -diffInSeconds},
+        { type: 'Anos', time: -diffInYears },
+        { type: 'Meses', time: -diffInMonths },
+        { type: 'Dias', time: -diffInDays },
+        { type: 'Horas', time: -diffInHours },
+        { type: 'Minutos', time: -diffInMinutes },
+        { type: 'Segundos', time: -diffInSeconds },
       ]);
     }, 1000);
 
