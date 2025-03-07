@@ -1,47 +1,204 @@
-const Imagens = [
-  { id: 1, src: './img1.jpg', type: 'jpg' },
-  { id: 2, src: './img2.jpg', type: 'jpg' },
-  { id: 3, src: './img3.jpg', type: 'jpg' },
-  { id: 4, src: './img4.jpg', type: 'jpg' },
-  { id: 5, src: './img5.jpg', type: 'jpg' },
-  { id: 6, src: './img6.jpg', type: 'jpg' },
-  { id: 7, src: './img7.jpg', type: 'jpg' },
-  { id: 8, src: './img8.jpg', type: 'jpg' },
-  { id: 9, src: './img9.jpg', type: 'jpg' },
-  { id: 10, src: './img10.jpg', type: 'jpg' },
-  { id: 11, src: './img11.jpg', type: 'jpg' },
-  { id: 12, src: './img12.jpg', type: 'jpg' },
-  { id: 13, src: './img13.jpg', type: 'jpg' },
-  { id: 14, src: './img14.jpg', type: 'jpg' },
-  { id: 15, src: './img15.jpg', type: 'jpg' },
-  { id: 16, src: './img16.jpg', type: 'jpg' },
-  { id: 17, src: './img17.jpg', type: 'jpg' },
-  { id: 18, src: './img18.jpg', type: 'jpg' },
-  { id: 19, src: './img19.jpg', type: 'jpg' },
-  { id: 20, src: './img20.jpg', type: 'jpg' },
-  { id: 21, src: './img21.jpg', type: 'jpg' },
-  { id: 22, src: './img22.jpg', type: 'jpg' },
-  { id: 23, src: './img23.jpg', type: 'jpg' },
-  { id: 24, src: './img24.jpg', type: 'jpg' },
-  { id: 25, src: './img25.jpg', type: 'jpg' },
-  { id: 26, src: './img26.jpg', type: 'jpg' },
-  { id: 27, src: './img27.jpg', type: 'jpg' },
-  { id: 28, src: './img28.jpg', type: 'jpg' },
-  { id: 29, src: './img29.jpg', type: 'jpg' },
-  { id: 30, src: './img30.jpg', type: 'jpg' },
-  { id: 31, src: './img31.mp4', type: 'mp4' },
-  { id: 32, src: './img32.mp4', type: 'mp4' },
-  { id: 33, src: './img33.mp4', type: 'mp4' },
-  { id: 34, src: './img34.mp4', type: 'mp4' },
-  { id: 35, src: './img35.mp4', type: 'mp4' },
-  { id: 36, src: './img36.mp4', type: 'mp4' },
-  { id: 37, src: './img37.jpg', type: 'jpg' },
-  { id: 38, src: './img38.jpg', type: 'jpg' },
-  { id: 39, src: './img39.jpg', type: 'jpg' },
-  { id: 40, src: './img40.jpg', type: 'jpg' },
-  { id: 41, src: './img41.jpg', type: 'jpg' },
-  { id: 42, src: './img42.jpg', type: 'jpg' },
-  { id: 43, src: './img43.jpg', type: 'jpg' },
+const imagens = [
+    {
+      src: `img1`,
+      type: `.jpg`,
+    },
+    {
+      src: `img2`,
+      type: `.jpg`,
+    },
+    {
+      src: `img3`,
+      type: `.jpg`,
+    },
+    {
+      src: `img4`,
+      type: `.jpg`,
+    },
+    {
+      src: `img5`,
+      type: `.jpg`,
+    },
+    {
+      src: `img6`,
+      type: `.mp4`,
+    },
+    {
+      src: `img7`,
+      type: `.jpg`,
+    },
+    {
+      src: `img8`,
+      type: `.jpg`,
+    },
+    {
+      src: `img9`,
+      type: `.jpg`,
+    },
+    {
+      src: `img10`,
+      type: `.jpg`,
+    },
+    {
+      src: `img11`,
+      type: `.jpg`,
+    },
+    {
+      src: `img12`,
+      type: `.mp4`,
+    },
+    {
+      src: `img13`,
+      type: `.jpg`,
+    },
+    {
+      src: `img14`,
+      type: `.jpg`,
+    },
+    {
+      src: `img15`,
+      type: `.jpg`,
+    },
+    {
+      src: `img16`,
+      type: `.jpg`,
+    },
+    {
+      src: `img17`,
+      type: `.jpg`,
+    },
+    {
+      src: `img18`,
+      type: `.mp4`,
+    },
+    {
+      src: `img19`,
+      type: `.jpg`,
+    },
+    {
+      src: `img20`,
+      type: `.jpg`,
+    },
+    {
+      src: `img21`,
+      type: `.jpg`,
+    },
+    {
+      src: `img22`,
+      type: `.jpg`,
+    },
+    {
+      src: `img23`,
+      type: `.jpg`,
+    },
+    {
+      src: `img24`,
+      type: `.mp4`,
+    },
+    {
+      src: `img25`,
+      type: `.jpg`,
+    },
+    {
+      src: `img26`,
+      type: `.jpg`,
+    },
+    {
+      src: `img27`,
+      type: `.jpg`,
+    },
+    {
+      src: `img28`,
+      type: `.jpg`,
+    },
+    {
+      src: `img29`,
+      type: `.jpg`,
+    },
+    {
+      src: `img30`,
+      type: `.mp4`,
+    },
+    {
+      src: `img31`,
+      type: `.jpg`,
+    },
+    {
+      src: `img32`,
+      type: `.jpg`,
+    },
+    {
+      src: `img33`,
+      type: `.jpg`,
+    },
+    {
+      src: `img34`,
+      type: `.jpg`,
+    },
+    {
+      src: `img35`,
+      type: `.jpg`,
+    },
+    {
+      src: `img36`,
+      type: `.mp4`,
+    },
+    {
+      src: `img37`,
+      type: `.jpg`,
+    },
+    {
+      src: `img38`,
+      type: `.jpg`,
+    },
+    {
+      src: `img39`,
+      type: `.jpg`,
+    },
+    {
+      src: `img40`,
+      type: `.jpg`,
+    },
+    {
+      src: `img41`,
+      type: `.jpg`,
+    },
+    {
+      src: `img42`,
+      type: `.jpg`,
+    },
+    {
+      src: `img43`,
+      type: `.jpg`,
+    },
+    {
+      src: `img44`,
+      type: `.jpg`,
+    },
+    {
+      src: `img45`,
+      type: `.jpg`,
+    },
+    {
+      src: `img46`,
+      type: `.jpg`,
+    },
+    {
+      src: `img47`,
+      type: `.jpg`,
+    },
+    {
+      src: `img48`,
+      type: `.jpg`,
+    },
+    {
+      src: `img49`,
+      type: `.jpg`,
+    },
+    {
+      src: `img50`,
+      type: `.jpg`,
+    },
 ];
 
-export default Imagens;
+export default imagens;

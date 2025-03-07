@@ -7,12 +7,12 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Imagens from './imagens';
-
+import imagens from './imagens'
 register();
 
 const ImageContainer = () => {
   const containerRef = React.useRef(null);
+  const data = imagens;
 
   React.useEffect(() => {
     const observer = new IntersectionObserver(
@@ -51,9 +51,9 @@ const ImageContainer = () => {
         autoplay={{ delay: 5000, disableOnInteraction: false }}
         loop={true}
       >
-        {Imagens.map((imagem) => (
-          <SwiperSlide key={imagem.id}>
-            <Image type={imagem.type} id={imagem.id} src={imagem.src}/>
+        {data && data.map(({src, type}, index) => (
+          <SwiperSlide key={index}>
+            <Image id={src} src={src+type}  type={type}/>
           </SwiperSlide>
         ))}
       </Swiper>
